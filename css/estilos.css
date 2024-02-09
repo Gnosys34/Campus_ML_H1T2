@@ -1,0 +1,213 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:Arial, Helvetica, sans-serif ;
+}
+html {
+    min-height: 100%;
+    position: relative;
+  }
+  body {
+    margin: 0;
+    margin-bottom: 40px;
+    background: rgb(212, 97, 3);
+    color:white;
+  }
+  footer {
+    background-color: black;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 55px;
+    text-align: center;
+    color: white;
+  }
+.cabecera{
+    max-width: 2000px;
+    margin: 0 auto;
+
+}
+header{
+    display: flex;
+    align-items: center;
+    -webkit-box-shadow:0px 0px 105px 39px rgba(187, 255, 0, 0.9);
+    -moz-box-shadow: 0px 0px 105px 39px rgba(187, 255, 0, 0.9);
+    box-shadow: 0px 0px 105px 39px rgba(157, 255, 0, 0.9);
+}
+section{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+nav ul li{
+    display: inline-block;
+    margin: 10px 10px;
+    background-color: rgb(0, 0, 0);
+    color:rgb(0, 0, 0);
+    border: 10px;
+    font-weight: bold;
+
+}
+nav a{
+    float: left;
+    padding: 10px;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-size: 17px;
+  
+}
+.activo{
+    background-color: rgb(0, 0, 0);
+    color:rgb(38, 199, 38);
+}
+nav a:hover{
+    background-color:grey;
+    color: rgb(0, 0, 0);
+}
+nav{
+    width: 100%;
+    text-align: end;
+    background-color: rgb(0, 0, 0) ;
+}
+
+section h1,h2,h3,h4{
+    text-align: center;
+    color:rgb(255, 255, 255)
+}
+.contenidos{
+    width: 1200px;
+    display: flex;
+    padding: 10px;
+    margin: 0 auto;
+    text-align: center;
+    justify-content: space-around;
+}
+.contenidos div{
+    padding: auto;
+    margin:10px;
+}
+.contenidos div img{
+    height: 150px;
+    width: 150px;
+}
+.contenidos div p{
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+}
+
+.miformulario{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+    .responsive-iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+   }
+    .responsive-iframe iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+   }
+   nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: flex-end; 
+   }
+    nav a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 15px;
+    }
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    select,
+    textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    }
+    footer {
+    text-align: center;
+
+    }
+    .cabecera {
+    text-align: center;
+
+    }
+    #Seccion1 h1 {
+    text-align: center;
+
+    }
+   
+    @media screen and (max-width: 623px) {
+        .miformulario {
+            padding: 10px;
+        }
+        input[type="text"],
+        input[type="email"],
+        input[type="tel"],
+        select,
+        textarea {
+            font-size: 14px;
+        }
+    }
+
+.vmenu{
+    width: 200px;
+}
+    
+  .vmenu ul{
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        line-height: 16px;
+    }
+    
+    .vmenu ul li{
+        border-bottom: 1px solid #1E1E1E;
+    }
+    .vmenu ul a{
+        box-sizing: border-box;
+        color: white;
+        background: #121212;
+        display: block;
+        width: 100%;
+        padding: 6px 10px;
+        text-decoration: none;
+    }
+    .vmenu ul ul{
+        height: 0px;
+        overflow: hidden;
+        transition: var(--estado-buda);
+        counter-reset: items;
+    }
+    .vmenu ul ul li{
+        counter-increment: items;
+    }
+        
+    .vmenu ul li:hover ul{
+        height: calc( var(--cantidad-items) * var(--cada-item) );
+    
+        background: rgb(2,0,36); 
+        background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(67,103,17,1) 35%, rgba(0,212,255,1) 100%);
+    
+    
+        /*
+        height: 100%;
+        max-height: calc( counter(items) * var(--cada-item) );
+        */
+    }
+    .vmenu ul ul a{
+        background: transparent;
+    }
+    

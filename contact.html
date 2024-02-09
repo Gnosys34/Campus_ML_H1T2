@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hito 1 2º Trimestre.Curso de Lenguaje de marcas.</title>
+    <link rel="stylesheet" href="./css/estilos.css">
+</head>
+<body>
+    <div>
+        <header class="cabecera">
+            <nav>
+                <ul>
+                    <li><a href="index.html">INICIO</a></li>
+                    <li><a href="XML.html">XML</a></li>
+                    <li><a href="JSON.html">JSON</a></li>
+                    <li><a href="#">CONTACTO</a></li>
+                </ul>
+            </nav>  
+        </header>
+    </div>
+
+    <div class="vmenu">
+        <ul>
+            <li><a href="#">Categorías</a></li>
+            <li><a href="">Últimos Post</a>
+                <ul>
+                    <li><a href="JSON.html">_JSON_</a></li>
+                    <li><a href="XML.html">_XML_</a></li>
+                </ul>
+            </li>
+            <li><a href="">Siguenos...</a>
+                <ul>
+                    <li><a href="https://github.com" target="_blank">GIT HUB</a></li>
+                    <li><a href="https://x.com" target="_blank">TWITTER</a></li>
+        </ul>
+    </div>
+
+<div>
+  
+    <section id="Seccion1">
+        <h1>Formulario de Contacto</h1><br><br>
+    
+            <div class="miformulario">
+                <form action="#">
+                    <label for="nombre">Empresa:</label><br>
+                    <input type="text" size="40" id="empresa" name="empresa" required pattern="[a-z,A-Z]{3,}" placeholder="Empresa, minimo 3 caracteres"><br><br>
+
+                    <label for="Email">Email:</label><br>
+                    <input type="email" size="40" id="email" name="email" required placeholder="introduzca un email válido"><br><br>
+
+                    <label for="pais">País:</label><br>
+                    <select id="pais" name="pais">
+                        <option value="">España</option>
+                        <option value="">Portugal</option>
+                        <option value="">Francia</option>
+                        <option value="">Inglaterra</option>
+                        <option value="">Alemania</option>
+                    </select><br><br>
+                    
+                    
+                    <label for="Telefono">Teléfono</label><br>
+                    <input type="tel" id="telefono" name="telefono" required pattern="[0-9]{8,12}" placeholder="números entre 8-12 caracteres"> <br>
+
+                    <label for="Mensaje">Mensaje</label><br>
+                     <input type="text" id="telefono" name="telefono" required pattern="^\s*(\S+\s+){4,100}\S*$" size="100" placeholder="mínimo 5 palabras"> <br> 
+                     <input type="submit" value="Enviar">
+                    <input type="reset" value="Cancelar">
+                </form>
+            </div>
+
+    </section>
+</div>    
+    <br><br><br><br><br><br><br><br>
+
+
+
+
+
+
+
+    <footer>
+        <br>
+        <p><strong>Miguel Perez Valverde</strong> 1º de ASIR. CampusFP. Alcalá de Henares</p>
+    </footer>
+</body>
+</html>

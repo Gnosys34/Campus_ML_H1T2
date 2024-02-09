@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hito 2.Curso de Lenguaje de marcas.</title>
+    <link rel="stylesheet" href="./css/estilos.css">
+</head>
+<body>
+    <div>
+        <header class="cabecera">
+            <nav>
+                <ul>
+                    <li><a href="index.html">INICIO</a></li>
+                    <li><a href="XML.html">XML</a></li>
+                    <li><a href="#">JSON</a></li>
+                    <li><a href="Contact.html">CONTACTO</a></li>
+
+                </ul>
+            </nav>  
+        </header>
+    </div>
+    <div class="vmenu">
+        <ul>
+            <li><a href="#">Categorías</a></li>
+            <li><a href="">Últimos Post</a>
+                <ul>
+                    <li><a href="JSON.html">_JSON_</a></li>
+                    <li><a href="XML.html">_XML_</a></li>
+                </ul>
+            </li>
+            <li><a href="">Siguenos...</a>
+                <ul>
+                    <li><a href="https://github.com" target="_blank">GIT HUB</a></li>
+                    <li><a href="https://x.com" target="_blank">TWITTER</a></li>
+        </ul>
+    </div>
+
+<div>
+<section id="Seccion1">
+    <h1>Orígenes y diferencias de JSON</h1>
+    <br>
+    <h2> JSON </h2> <br>
+  <p>JSON ha emergido como un formato ligero y fácil de entender para el intercambio de datos.
+    Su estructura basada en pares clave-valor lo hace particularmente adecuado para aplicaciones web y servicios API (Interfaz de Programación de Aplicaciones).<br></p>  
+    <p><strong><br>Orígenes:</strong><br><br>
+    Desarrollado en la década de 2000, JSON es nativo de JavaScript y ha encontrado una amplia adopción debido a su simplicidad y facilidad de uso. <br><br>
+JSON tiene sus raíces en la década de 2000 y fue concebido por Douglas Crockford como una respuesta a la necesidad de un formato de intercambio de datos más ligero y fácil de leer. 
+JSON se inspiró en la sintaxis de objetos de JavaScript, adoptando una estructura simple de pares clave-valor y listas ordenadas.
+La simplicidad de JSON fue clave para su rápida adopción. 
+A medida que las aplicaciones web ganaban popularidad, JSON se convirtió en el formato preferido para la transmisión de datos entre el servidor y el cliente. Su legibilidad y facilidad de parseo en entornos JavaScript hicieron que JSON fuera una elección natural para el intercambio de datos en servicios web y aplicaciones AJAX.
+<br><br>
+El año 2001 marcó un hito importante cuando Douglas Crockford propuso formalmente la especificación de JSON. 
+Aunque no está respaldado por un organismo de estandarización formal como el W3C, JSON ha sido ampliamente adoptado y se ha convertido en un estándar de facto para la transmisión de datos estructurados en la web.
+<br><br>
+<strong>Algunas de sus Características:</strong><br><br>
+<br>
+
+Legibilidad humana: JSON está diseñado para ser fácilmente legible tanto para humanos como para máquinas. Su sintaxis es simple y similar a la de los objetos en JavaScript.<br><br>
+
+Ligereza: JSON es un formato de datos ligero, lo que significa que ocupa menos espacio en comparación con otros formatos de intercambio de datos como XML.<br><br>
+
+Independiente del lenguaje: JSON puede ser interpretado y utilizado por la mayoría de los lenguajes de programación. No está atado a un lenguaje específico, lo que lo hace versátil y ampliamente compatible.<br><br>
+
+Soporte para estructuras de datos complejas: JSON admite una variedad de tipos de datos, incluyendo objetos, arreglos, cadenas, números, booleanos y valores nulos. Esto permite representar estructuras de datos complejas de manera eficiente.<br><br>
+
+<br><h3> Normas de Uso y Sintaxis </h3> 
+<br><h4> Normas de Uso </h4><br>
+RFC 8259: JSON está definido por el RFC (Request for Comments) 8259, que especifica las reglas para el formato de datos JSON. 
+Este estándar establece la sintaxis y la estructura básica de JSON, incluyendo la definición de objetos, arreglos, cadenas, números, booleanos y valores nulos.
+
+<br><br><br><h4> Sintaxis </h4><br><br>
+Objetos: Los objetos en JSON se representan entre llaves {} y consisten en una lista de pares clave-valor separados por comas. La clave y el valor se separan mediante dos puntos :. Por ejemplo: { "clave": "valor" }.<br><br>
+Arreglos: Los arreglos en JSON se representan entre corchetes [] y contienen una secuencia ordenada de valores separados por comas. Los valores pueden ser cualquier tipo de datos JSON, incluyendo objetos, arreglos, cadenas, números, booleanos o valores nulos. Por ejemplo: [ "valor1", "valor2", "valor3" ].<br><br>
+Cadenas: Las cadenas en JSON se representan entre comillas dobles " ". Pueden contener cualquier secuencia de caracteres Unicode, incluyendo letras, números, símbolos y espacios en blanco. Por ejemplo: "cadena".<br><br>
+Números: Los números en JSON pueden ser enteros o decimales y se representan de manera similar a la notación numérica en JavaScript. Por ejemplo: 123, 3.14.<br><br>
+Booleanos y valores nulos: JSON admite los valores booleanos true y false, así como el valor nulo null.<br><br>
+Comentarios: A diferencia de XML, JSON no admite comentarios formales. Sin embargo, algunos parsers de JSON pueden tolerar comentarios no estándar como un "hack" o extensión, pero esto no es parte de la especificación oficial y puede no ser compatible en todos los entornos.<br><br>
+
+
+<br><h3> Aplicaciones Empresariales </h3> <br><br>
+
+-- Intercambio de datos en servicios web y APIs: JSON es uno de los formatos más populares para el intercambio de datos en servicios web y APIs (Application Programming Interfaces). Muchas APIs empresariales, como las API de redes sociales, financieras o de servicios en la nube, utilizan JSON para enviar y recibir datos entre servidores y clientes. Su estructura simple y su compatibilidad con una variedad de lenguajes de programación hacen que JSON sea una elección popular para estas aplicaciones.<br><br>
+
+-- Representación de datos en aplicaciones web: JSON se utiliza ampliamente para representar y manipular datos en aplicaciones web modernas. Es particularmente común en el desarrollo de aplicaciones de una sola página (Single Page Applications) y aplicaciones basadas en AJAX, donde se utiliza para transmitir datos entre el frontend y el backend de la aplicación.<br><br>
+
+-- Almacenamiento y transferencia de datos en bases de datos NoSQL: Muchas bases de datos NoSQL, como MongoDB, Couchbase y Firebase, almacenan datos en formato JSON o en formatos similares. Esto facilita la integración de datos entre la capa de aplicación y la capa de almacenamiento de datos, ya que los datos pueden almacenarse y recuperarse en un formato que es directamente utilizable por la aplicación.<br><br>
+
+-- Configuración y intercambio de datos entre sistemas empresariales: JSON se utiliza para configurar y compartir datos entre diferentes sistemas empresariales, como sistemas de gestión de recursos empresariales (ERP), sistemas de gestión de relaciones con clientes (CRM) y sistemas de gestión de inventario. Su simplicidad y legibilidad lo hacen útil para representar configuraciones de sistema, definiciones de productos y otros datos de configuración.<br><br>
+
+-- Análisis de datos y almacenamiento de registros: JSON se utiliza a menudo para almacenar datos de registro estructurados y para representar datos en sistemas de análisis y business intelligence. Su capacidad para representar datos de manera jerárquica y su flexibilidad lo hacen adecuado para almacenar registros de eventos, métricas de rendimiento y otros tipos de datos de aplicación.<br><br>
+
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+</div>
+
+
+
+<footer>
+        <br>
+        <p><strong>Miguel Perez Valverde</strong> 1º de ASIR. CampusFP. Alcalá de Henares</p>
+</footer>
+</body>
+</html>
